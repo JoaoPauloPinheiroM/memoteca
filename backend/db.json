@@ -1,0 +1,76 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "O importante não é vencer todos os dias, mas lutar sempre.",
+      "autoria": "Walt Disney",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Acredite em si próprio e chegará um dia em que os outros não terão outra escolha senão acreditar com você.",
+      "autoria": "Cynthia Kersey",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "Não importa o quão devagar você vá, desde que você não pare.",
+      "autoria": "Confúcio",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 4,
+      "conteudo": "Nossa maior fraqueza está em desistir. O caminho mais certo de vencer é tentar mais uma vez.",
+      "autoria": "Thomas Edison",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 5,
+      "conteudo": "O sucesso é ir de fracasso em fracasso sem perder entusiasmo.",
+      "autoria": "Winston Churchill",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 6,
+      "conteudo": "A única maneira de fazer um excelente trabalho é amar o que você faz.",
+      "autoria": "Steve Jobs",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 7,
+      "conteudo": "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+      "autoria": "Eleanor Roosevelt",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 8,
+      "conteudo": "A vida é 10% o que acontece comigo e 90% como eu reajo a isso.",
+      "autoria": "Charles Swindoll",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 9,
+      "conteudo": "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+      "autoria": "Robert Collier",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 10,
+      "conteudo": "Acredite em si mesmo e todo o resto virá naturalmente.",
+      "autoria": "Elissa Gabbert",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 11,
+      "conteudo": "A vida raramente segue o roteiro que imaginamos quando somos jovens. Crescemos acreditando que existe um caminho linear entre esforço e recompensa, mas o tempo revela que a realidade é mais complexa. São justamente os desvios inesperados que moldam nosso caráter, pois cada dificuldade obriga a mente a se reorganizar, aprender e evoluir. No fim, aquilo que parecia um obstáculo muitas vezes se transforma na experiência que dá sentido à jornada.",
+      "autoria": "Steve Jobs",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 12,
+      "conteudo": "O futuro pertence àqueles que acreditam na beleza de seus sonhos.",
+      "autoria": "Eleanor Roosevelt",
+      "modelo": "modelo2"
+    }
+  ]
+}

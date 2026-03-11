@@ -1,5 +1,7 @@
+import { Pureish } from './../../../../../node_modules/@babel/types/lib/index-legacy.d';
+import { PensamentoService } from './../../pensamento.service';
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-criar-pensamento',
   templateUrl: './criar-pensamento.component.html',
@@ -9,22 +11,28 @@ export class CriarPensamentoComponent implements OnInit {
 
   // isso é uma propriedade -> property binding
   pensamento = {
-    id: '1',
-    conteudo: "Aprendendo angular",
-    autoria: "João Paulo",
-    modelo: ""
+    conteudo: "",
+    autoria: "",
+    modelo: "modelo1"
   }
 
-  constructor() { }
+  constructor(
+    private services: PensamentoService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
 
   criarPensamento() {
-    alert('Pensamento criado com sucesso!')
+    this.services.Criar(this.pensamento).subscribe(() => {
+      alert('Pensamento criado com sucesso!');
+      this.router.navigate(['/listarpensamento']);
+    });
   }
   cancelarPensamento() {
-    alert('Pensamento cancelado!')
+    this.router.navigate(['/listarpensamento']);
   }
 }
+

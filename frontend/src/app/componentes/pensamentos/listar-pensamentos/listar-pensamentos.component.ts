@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PensamentoService } from '../../pensamento.service';
+import { Pensamento } from '../pensamento';
+
 
 @Component({
   selector: 'app-listar-pensamentos',
@@ -7,29 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentosComponent implements OnInit {
 
-  listaPensamentos = [
-    {
+  listaPensamentos: Pensamento[] = [
 
-      conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.",
-      autoria: "João Paulo",
-      modelo: "modelo3"
-
-    },
-    {
-      conteudo: "Angula com café e melão",
-      autoria: "João Paulo",
-      modelo: "modelo2"
-    },
-    {
-      conteudo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.",
-      autoria: "João Paulo",
-      modelo: "modelo1"
-    }
   ];
 
-  constructor() { }
+  constructor(private service: PensamentoService) { }
 
   ngOnInit(): void {
+    this.service.Listar().subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos;
+    });
   }
 
 }
