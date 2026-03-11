@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://SUA-API-AQUI.onrender.com'
+  apiUrl: 'https://memoteca-api.onrender.com'
 };
