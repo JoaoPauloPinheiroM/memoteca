@@ -10,7 +10,7 @@
       "id": 2,
       "conteudo": "Acredite em si próprio e chegará um dia em que os outros não terão outra escolha senão acreditar com você.",
       "autoria": "Cynthia Kersey",
-      "modelo": "modelo2"
+      "modelo": "modelo3"
     },
     {
       "id": 3,
@@ -53,12 +53,6 @@
       "conteudo": "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
       "autoria": "Robert Collier",
       "modelo": "modelo2"
-    },
-    {
-      "id": 10,
-      "conteudo": "Acredite em si mesmo e todo o resto virá naturalmente.",
-      "autoria": "Elissa Gabbert",
-      "modelo": "modelo3"
     },
     {
       "id": 11,
