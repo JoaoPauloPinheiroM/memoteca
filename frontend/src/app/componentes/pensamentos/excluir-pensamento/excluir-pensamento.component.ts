@@ -1,6 +1,6 @@
 import { Pensamento } from '../pensamento';
 import { Component, OnInit } from '@angular/core';
-import { PensamentoService } from '../../pensamento.service';
+import { PensamentoService } from '../pensamento.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 

@@ -1,0 +1,41 @@
+<section class="container form-login">
+  <header class="header-login">
+    <h2>Acesse a Memoteca</h2>
+    <p><b>Atenção:</b> Entre com suas credenciais. Não use logins reais em outras plataformas, este site não protege seus dados.</p>
+  </header>
+
+  <form (ngSubmit)="entrar()">
+    <div class="input-container">
+      <label for="email">E-mail</label>
+      <input 
+        type="email" 
+        class="input" 
+        id="email" 
+        name="email" 
+        placeholder="Digite seu e-mail" 
+        [(ngModel)]="email"
+        required=""
+      >
+    </div>
+
+    <div class="input-container">
+      <label for="senha">Senha</label>
+      <input 
+        type="password" 
+        class="input" 
+        id="senha" 
+        name="senha" 
+        placeholder="Digite sua senha" 
+        [(ngModel)]="senha"
+        required=""
+      >
+    </div>
+
+    <div class="acoes">
+      <button class="botao" type="submit">Entrar</button>
+      <button class="botao botao-cancelar" type="button" routerLink="/cadastro">Criar conta</button>
+    </div>
+  </form>
+  <p class="erro" *ngIf="erro">{{ erro }}</p>
+  
+</section>

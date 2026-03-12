@@ -26,6 +26,33 @@
   color: #6BD1FF;
 }
 
+.cabecalho .usuario {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cabecalho .usuario span {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cabecalho .usuario .sair {
+  border: 1px solid #6BD1FF;
+  background: transparent;
+  color: #6BD1FF;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cabecalho .usuario .sair:hover {
+  background: #6BD1FF;
+  color: #154580;
+}
+
 @media (max-width: 576px) {
   .cabecalho .logo {
     padding: 2rem;

@@ -1,31 +1,46 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './componentes/auth/auth.guard';
+import { CadastroComponent } from './componentes/auth/cadastro/cadastro.component';
+import { LoginComponent } from './componentes/auth/login/login.component';
 import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
-import { ListarPensamentosComponent } from './componentes/pensamentos/listar-pensamentos/listar-pensamentos.component';
-import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
+import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
+import { ListarPensamentosComponent } from './componentes/pensamentos/listar-pensamentos/listar-pensamentos.component';
 
 const routes: Routes = [
   {
-    path:"",
-    redirectTo:"listarpensamento",
-    pathMatch:"full"
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
   },
   {
-    path:"criarpensamento",
-    component:CriarPensamentoComponent
+    path: 'login',
+    component: LoginComponent
   },
   {
-    path:"listarpensamento",
-    component:ListarPensamentosComponent
+    path: 'cadastro',
+    component: CadastroComponent
   },
   {
-    path:"pensamentos/excluirpensamento/:id",
-    component: ExcluirPensamentoComponent
+    path: 'criarpensamento',
+    component: CriarPensamentoComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path:"pensamentos/editarpensamento/:id",
-    component: EditarPensamentoComponent
+    path: 'listarpensamento',
+    component: ListarPensamentosComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'pensamentos/excluirpensamento/:id',
+    component: ExcluirPensamentoComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'pensamentos/editarpensamento/:id',
+    component: EditarPensamentoComponent,
+    canActivate: [AuthGuard]
   }
 ];
 
@@ -33,4 +48,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

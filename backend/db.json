@@ -6,5 +6,25 @@
       "autoria": "Walt Disney Junior",
       "modelo": "modelo1"
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "admin",
+      "email": "suporte@gmail.com",
+      "senha": "Roberto123()"
+    },
+    {
+      "nome": "João",
+      "email": "joao@gmail.com",
+      "senha": "qwe123",
+      "id": 2
+    },
+    {
+      "nome": "Joao Paulo Pinheiro Mourao",
+      "email": "joaopietro@gmail.com",
+      "senha": "qwe123",
+      "id": 3
+    }
   ]
 }

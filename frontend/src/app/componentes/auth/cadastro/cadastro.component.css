@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', sans-serif;
+}
+
+.header-login {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header-login h2 {
+  color: #154580; /* Azul escuro padrão da Memoteca */
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-login p {
+  color: #7a7a7a;
+  font-size: 1rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  color: #154580;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.input {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #F1F2F6; /* Fundo acinzentado do input */
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #154580;
+}
+
+.input::placeholder {
+  color: #A0A0A0;
+}
+
+.acoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.botao {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  background-color: #154580;
+  color: white;
+}
+
+.botao:hover {
+  opacity: 0.9;
+}
+
+.botao:active {
+  transform: scale(0.98);
+}
+
+.botao-cancelar {
+  background-color: #F1F2F6;
+  color: #154580;
+}
+
+.botao-cancelar:hover {
+  background-color: #e4e5e9;
+  opacity: 1;
+}
